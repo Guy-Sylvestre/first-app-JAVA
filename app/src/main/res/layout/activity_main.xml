@@ -34,13 +34,15 @@
         <Button
             android:id="@+id/b1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="45dp"
+            android:background="@drawable/image_1"
+            android:text="Button"
+            android:textColor="@color/white" />
 
         <ListView
             android:id="@+id/list1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="739dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
