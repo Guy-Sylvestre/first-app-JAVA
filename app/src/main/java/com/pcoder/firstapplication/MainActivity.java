@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Modifier les donnees de l'interface
         t1.setText("Pcoder");
-        b1.setText("Send");
+        b1.setText("Appeler");
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +77,17 @@ public class MainActivity extends AppCompatActivity {
                 //Passser d'une activite a une autre
                 //Intent i = new Intent(MainActivity.this, MainActivity2.class);
                 //startActivity(i);
+
+                //Envoie de SMS
+                //SmsManager s = SmsManager.getDefault();
+                //s.sendTextMessage(e1.getText().toString(), null, "Bonjour", null, null);
+
+                //Faire un appel
+                //Intent in = new Intent(Intent.ACTION_DIAL);
+                Intent in = new Intent(Intent.ACTION_CALL);
+                in.setData(Uri.parse("tel:" + e1.getText().toString() ));
+                //in.setData(Uri.parse("tel:0789773695"));
+                startActivity(in);
             }
         });
 

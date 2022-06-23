@@ -28,8 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Saisir votre Nom ici"
-            android:inputType="textPersonName" />
+            android:hint="Saisir le numero a appeler"
+            android:inputType="phone" />
 
         <Button
             android:id="@+id/b1"
