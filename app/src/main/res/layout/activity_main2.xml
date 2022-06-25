@@ -7,17 +7,57 @@
     tools:context=".MainActivity2">
 
     <LinearLayout
-        android:layout_width="348dp"
-        android:layout_height="830dp"
+        android:layout_width="0dp"
+        android:layout_height="889dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/e2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Saisir le nom de la voiture"
             android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter son prix"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Taper son kilometrage"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_inserer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4511E"
+            android:text="Inserer la voitue"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/e5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
